@@ -3,7 +3,9 @@ var init = function(server){
 	var sockets = {};
 	io.on('connection', function(socket){
 	    //socket.emit('news', {hello: 'world'});
+	    //console.log('connect',socket);
 	    socket.on('login', function(data){
+	    	console.log('login',data);
 	    	var user = data.user;
 	    	if(!user){
 	    		socket.emit('error',{
@@ -20,6 +22,7 @@ var init = function(server){
 	    			msg: 'balabala'
 	    		}*/	
 	    	socket.on('msg', function(data){
+	    		console.log('msg', data);
 	    		socket.emit('onmsg', {status:1});
 	    		if(data && data.to && sockets[data.to]){
 	    			// TODO, data.to is invalid user
