@@ -1,0 +1,23 @@
+{
+  "name": "practice-socketio",
+  "description": "",
+  "main": "",
+  "authors": [
+    "mz111 <zoumy0613@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "socket.io": "~1.4.5",
+    "socket.io-client": "~1.4.5"
+  }
+}
